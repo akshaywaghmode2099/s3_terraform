@@ -210,5 +210,5 @@ __marimo__/
 .terraform/
 terraform.tfstate
 terraform.tfstate.*
-*.tfvars
 .terraform.lock.hcl
+.terraform-key.pem

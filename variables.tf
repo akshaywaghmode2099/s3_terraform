@@ -10,3 +10,8 @@ variable "aws_region" {
 variable "bucket_names" {
   type = list(string)
 }
+
+variable "instance_type" {
+  default = "t2.micro"
+}
+variable "key_name" {}

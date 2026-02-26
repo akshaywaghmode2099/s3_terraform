@@ -17,3 +17,13 @@ terraform validate
 terraform plan
 terraform apply
 terraform destroy
+
+
+cred run commands
+
+Get-Content .env | ForEach-Object {
+    $name, $value = $_ -split '='
+    [System.Environment]::SetEnvironmentVariable($name, $value, "Process")
+}
+
+echo $env:AWS_ACCESS_KEY_ID  --- cross check for confirm 
